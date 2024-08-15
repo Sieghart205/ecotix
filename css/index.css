@@ -1,0 +1,191 @@
+:root{
+    --primary: #42DBD3;
+    --secondary: #42DB6B;
+    --acent: #DB5B42;
+    --dark: #18171A;
+    --white: #F0F0F0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #efefef;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* textos */
+
+.title{
+    font-size: 128px;
+}
+
+.subtitle{
+    font-size: 61px;
+}
+
+.text{
+    font-size: 31px;
+}
+
+.weight{
+    font-family: "Poppins";
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.text{
+    font-family: "signika negative";
+    text-decoration: none;
+}
+
+.dark{
+    color: var(--dark);
+}
+
+.blank{
+    color: var(--white);
+}
+
+.primary{
+    color: var(--primary);
+}
+
+.secondary{
+    color: var(--secondary);
+}
+
+.acent{
+    color: var(--acent);
+}
+
+.continue{
+    display: flex;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    padding: 30px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    z-index: 999;
+}
+
+header nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+}
+
+.sec-1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: contain;
+}
+
+.container{
+    position: absolute;
+    z-index: 150;
+}
+
+.slider{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+.slider img{
+    width: 0;
+    height: 100vh;
+    object-fit: cover;
+    flex-grow: 1;
+    filter: brightness(0.4);
+    transition: .5s ease;
+}
+
+.slider img:hover{
+    width: 50vh;
+    cursor: crosshair;
+}
+
+.sec-2{
+    margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #efefef;
+    position: relative;
+    z-index: 200;
+}
+
+.sec-2.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+
+.sec-2 img{
+    height: 70vh;
+    object-fit: cover;
+    object-position: right;
+}
+
+.sec-2 .info{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sec-3{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/init2.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 250;
+}
+
+/* scrollbar */
+
+
+::-webkit-scrollbar{
+    background-color: #7a7a7a;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #DB5B42;
+    width: 7px;
+    border-radius: 7px;
+}
